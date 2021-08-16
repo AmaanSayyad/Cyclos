@@ -1,0 +1,18 @@
+This file is part of Cyclos <http://www.cyclos.org>.
+Cyclos is a project of the (non profit)
+Social TRade Organisation <http://www.socialtrade.org>.
+
+Cyclos is developed to stimulate and empower local and regional economies.
+By enabling a decentralization of banking services or providing modern
+tools to complementary currency systems.
+
+Cyclos 4 and higher is copyrighted and can only be used with the permission
+of the Social TRade Organisation (STRO). 
+A free version can be granted to organisations with a social mission,
+for the conditions please check our website:
+
+http://www.cyclos.org
+
+Cyclos is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

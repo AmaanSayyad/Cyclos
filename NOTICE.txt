@@ -1,0 +1,75 @@
+Cyclos uses the following libraries, released under open source licenses:
+
+Library                                                        | License
+-------------------------------------------------------------------------------
+ANTLR - http://www.antlr.org                                   | New BSD
+Apache batik - http://xmlgraphics.apache.org/batik/            | Apache 2
+Apache commons - http://commons.apache.org/                    | Apache 2
+Apache HttpComponents - http://hc.apache.org/                  | Apache 2
+AWS SDK - https://github.com/aws/aws-sdk-java-v2               | Apache 2
+Base64 JS - http://www.webtoolkit.info/javascript-base64.html  | Custom [1]
+c3p0 - http://www.mchange.com/projects/c3p0/                   | LGPL 2.1
+CSS User Agent - http://cssuseragent.org                       | MIT
+EclipseLink - http://www.eclipse.org/eclipselink/              | EPL
+Elasticsearch - https://www.elastic.co/elasticsearch/          | Apache 2
+EventSource polyfill - https://github.com/Yaffle/EventSource   | MIT
+Google Cloud Storage - [2]                                     | Apache 2
+Groovy - http://groovy.codehaus.org                            | Apache 2
+Guava - https://code.google.com/p/guava-libraries/             | Apache 2
+GWT-Maps-V3-Api - [3]                                          | Apache 2
+Hazelcast - http://www.hazelcast.com/                          | Apache 2
+he (HTML Entities) - https://github.com/mathiasbynens/he       | MIT
+Hibernate validator - http://hibernate.org/validator/          | Apache 2
+Jackson - http://wiki.fasterxml.com/JacksonDownload            | Apache 2
+JavaScripTools - http://javascriptools.sourceforge.org         | LGPL 2.1
+jsass - https://gitlab.com/jsass/jsass                         | MIT
+jsoup - https://jsoup.org/                                     | MIT
+Kaptcha - https://code.google.com/p/kaptcha/                   | Apache 2
+libphonenumber - https://code.google.com/p/libphonenumber/     | Apache 2
+Log4j 2 - http://logging.apache.org/log4j                      | Apache 2
+OpenAPI generator - https://openapi-generator.tech/            | Apache 2
+openhtmltopdf - https://github.com/danfickle/openhtmltopdf     | LGPL 2.1
+OWASP HTML sanitizer - [4]                                     | New BSD
+pac4j - https://www.pac4j.org/                                 | Apache 2
+pngtastic - https://code.google.com/p/pngtastic/               | MIT
+PostgreSQL JDBC driver - http://jdbc.postgresql.org            | New BSD
+QRGen - https://github.com/kenglxn/QRGen                       | Apache 2
+Querydsl - http://www.querydsl.com/                            | Apache 2
+Rhino - https://github.com/mozilla/rhino                       | MPL 2
+SLF4J - http://www.slf4j.org/                                  | MIT
+Spring framework - http://projects.spring.io/spring-framework/ | Apache 2
+Thymeleaf - https://www.thymeleaf.org/                         | Apache 2
+Velocity - https://velocity.apache.org/                        | Apache 2
+
+[1]: http://www.webtoolkit.info/license1/index.html
+[2]: https://github.com/googleapis/java-storage
+[3]: https://github.com/branflake2267/GWT-Maps-V3-Api
+[4]: https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer_Project
+
+You can get the license contents online:
+
+License            | Reference
+-------------------------------------------------------------------------------
+Apache 2           | http://www.apache.org/licenses/LICENSE-2.0
+New (3-clause) BSD | http://opensource.org/licenses/BSD-3-Clause
+EPL                | http://www.eclipse.org/legal/epl-v10.html
+LGPL 2.1           | http://www.gnu.org/licenses/lgpl-2.1.html
+MIT                | http://opensource.org/licenses/MIT
+MPL 2              | http://www.mozilla.org/MPL/
+
+
+Icons / images licenses
+-------------------------------------------------------------------------------
+All icons shown on the website and cyclos application are copyright and owned
+by Cyclos, with the exception of:
+
+* The Silk icons from fam fam fam, we are very thankful making these
+  great icons publicly available 
+  (CC Attribution 3.0, http://www.famfamfam.com/lab/icons/silk/).
+* Zoom-3 icon (Nuvola, http://www.icon-king.com/projects/nuvola/, LGPL-2.1).
+* Money icon (Aha-Soft, http://www.aha-soft.com/, CC Attribution 3.0).
+* User icon (Aha-Soft, http://www.aha-soft.com/, purchased).
+* Knode icon (YellowIcon, http://www.yellowicon.com/, GNU/GPL).
+* View-pim-contacts icon 
+  (Oxygen, http://www.oxygen-icons.org/, CC-BY-SA 3.0 or LGPL).
+* People icon (Aha-Soft, http://www.aha-soft.com/, purchased). 
