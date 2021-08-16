@@ -1,0 +1,28 @@
+ext {
+    webDir = '../web'
+    uiDist = System.getProperty('ui.dist')
+    preamble = "$webDir/WEB-INF/pages/jsp-preamble.jsp"
+    jsp = "$webDir/WEB-INF/pages/ui.jsp"
+}
+apply from: 'processAngularHtml.gradle'
+
+task copyUi {
+    inputs.dir uiDist
+    inputs.file preamble
+    outputs.file jsp
+
+    group = 'Build'
+    description = 'Copy the cyclos4-ui app generated files as a JSP'
+    
+    doLast {
+        if (uiDist == null || uiDist.trim() == '') {
+            throw new IllegalStateException('Missing parameter -Dui.dist=/path/to/dist/ui')
+        }
+        
+        ant.copy(todir:"$webDir/ui") {
+            fileset(dir: uiDist)
+        }
+        
+        processAngularHtml(preamble, uiDist, jsp, [], true, true)
+    }
+}

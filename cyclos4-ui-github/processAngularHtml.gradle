@@ -1,0 +1,48 @@
+ext.processAngularHtml = { preamble, dist, jsp, vars, replaceStyle, cssPreload ->
+    ant.concat(destfile: jsp) {
+        fileset(file: preamble)
+        fileset(file: "$dist/index.html")
+    }
+    
+    def file = file(jsp)
+    def content = file.getText('UTF-8')
+    content = content.replaceAll(/<link id="robotoLink"[^>]+>/) { """<link id="robotoLink" ${cssPreload ? 'media="preload"' : ''} rel="stylesheet" href="\${fontCssUrl}">""" }
+    if (replaceStyle) {
+        content = content.replaceAll(/href="styles\.[^\.]+\.css"/, """id="stylesLink" ${cssPreload ? 'media="preload"' : ''} href="\\\${styleUrl}" """)
+    }
+    content = content.replaceAll(/<\/head>/) { '${meta}\n</head>' }
+    content = content.replaceAll(/<script src="([^"]+)"[^>]*><\/script>/) { m, name ->
+        if (name.startsWith('styles.') && replaceStyle) {
+            // This is actually a style
+            return """ 
+        <script>
+            document.addEventListener('load', new function () {
+                var s = document.createElement('link');
+                ${cssPreload ? "s.setAttribute('media', 'preload');" : ""}
+                s.setAttribute('rel', 'stylesheet');
+                s.setAttribute('href', '\${styleUrl}');
+                s.onload = new function() {
+                    s.setAttribute('media', '');
+                };
+                document.body.appendChild(s);
+            }, false);
+        </script>
+        """;
+        } else {
+            return """
+        <script>
+            document.addEventListener('load', new function () {
+                var s = document.createElement('script');
+                s.setAttribute('src', '${name}');
+                s.setAttribute('defer', 'true');
+                document.body.appendChild(s);
+            }, false);
+        </script>
+        """;
+        }
+    }
+    vars.each { v ->
+        content = content.replaceAll("var\\s+${v}\\s*=\\s*null\\s*;") { "var $v = \${${v} == null ? null : ${v}}" }
+    }
+    file.setText(content, 'UTF-8')
+}
