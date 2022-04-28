@@ -16,15 +16,7 @@ Requirements
 * PostgreSQL 9.6 or higher (however, it is recommended to use the latest release)
 * PostGIS 2.1 or higher (however, it is recommended to use the latest release)
 
-
-Version policy
--------------------------------------------------------------------------------
-The first released version of Cyclos 4 was 4.0 (or 4.0.0).
-The next released version was 4.0.1. Each component, X.Y.Z are:
-* X: The major version number. Will be 4 for then entire lifecycle of Cyclos 4.
-* Y: The milestone number. This number indicates that new features are available and could bring incompatible API changes.
-* Z: Contains only bug fixes, and maybe some backwards-compatible API changes. Upgrading to those releases is always recommended.
-
+--- 
 
 Installation
 -------------------------------------------------------------------------------
