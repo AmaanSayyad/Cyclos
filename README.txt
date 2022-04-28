@@ -1,8 +1,7 @@
 Cyclos 4.14.12
 -------------------------------------------------------------------------------
 
-Cyclos is an online and mobile payment system made by the
-Social TRade Organisation (STRO).
+Cyclos is an online and mobile payment system.
 
 The Cyclos license information is published in the license folder in the 
 distribution archive, as well as the licenses for libraries and icons used 
@@ -11,11 +10,6 @@ in Cyclos.
 In order to run Cyclos, a license key is needed. STRO offers free, social
 and commercial licenses. The licenses can be requested through the license
 management servers, at https://license.cyclos.org
-
-For more information please visit:
-http://www.cyclos.org
-http://www.socialtrade.org
-
 
 Requirements
 -------------------------------------------------------------------------------
@@ -84,13 +78,4 @@ Customizing the frontend
 Starting with Cyclos 4.14, the new Cyclos frontend is integrated in Cyclos.
 It still needs to be enabled in the configuration, as some functionality might
 not be implemented in the new frontend.
-This frontend can be customized, and updated in the bundle. For more details,
-See the project page on GitHub: https://github.com/cyclosproject/cyclos4-ui 
-
-
-More documentation
--------------------------------------------------------------------------------
-Please, refer to https://www.cyclos.org/documentation for more documentation,
-including information on how to configure Cyclos, to integrate 3rd party
-software with Cyclos via web services and to extend the Cyclos functionality
-using the scripting module.
+This frontend can be customized, and updated in the bundle. 
