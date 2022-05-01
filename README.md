@@ -84,7 +84,7 @@ On a slow computer, this could take up to 3 minutes! • Upon the first start of
 
 ---
   
-## **STEPS TO RUN DIRECTLY THROUGH THE LINK (FOR CUSTOMERS): **
+## STEPS TO RUN DIRECTLY THROUGH THE LINK (FOR CUSTOMERS)
   1. Go to URL: https://demo.cyclos.org/ui/users/registration 
   2. Register on the page, after registering you will receive a verification email, verify your email id by clicking the here option in your email. 
   3. You will be redirected to the login page https://demo.cyclos.org/ui/login 
